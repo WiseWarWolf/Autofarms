@@ -5,6 +5,7 @@ SetWorkingDir, %A_ScriptDir%
 
 ^r::
 MouseGetPos, xpos, ypos 
-MsgBox, The cursor is at X: %xpos% Y: %ypos%.
+MsgBox, Tracked cursor Location at: C:\Users\<UserName>\Documents\AFCode\Pos.txt
 
-FileAppend x: %xpos% y: %ypos% `n, C:\Users\biri2\Documents\code\Autofarms\Pos.txt
+FileCreateDir, C:\Users\<UserName>\Documents\AFCode
+FileAppend x: %xpos% y: %ypos% `n, C:\Users\<UserName>\Documents\AFCode\Pos.txt
